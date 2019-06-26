@@ -7,9 +7,8 @@ def index(request):
     posts = Posts.objects.all()[:10]
 
     context = {
-        'title': 'Latest Posts',
+        'title': "Joel's Posts",
         'posts': posts
-
     }
 
 
