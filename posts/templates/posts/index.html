@@ -1,15 +1,19 @@
 {% extends 'posts/layout.html' %}
 
 {% block content %}
-<h3 class="center-align blue lighten-5"> {{ title }} </h3>
+<h3 class="center-align green lighten-5"> {{ title }} </h3>
 
 
 <ul class="collection">
+
+
   {% for post in posts %}
-    <li class="collection-item"><a href='/posts/details/{{ post.id }}'>{{ post.title }}</a><p style = "width: 400px;
+    <li class="collection-item"><a href='/posts/details/{{ post.id }}'>{{ post.title }}:</a><p style = "width: 380px;
     white-space: nowrap;
+    padding-left: 45px;
     overflow: hidden;
     text-overflow: ellipsis;">{{ post.body }}</p></li>
+
 
 
 
